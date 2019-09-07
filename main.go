@@ -33,6 +33,9 @@ func (v *Vembed) GetVersion() string {
 }
 
 func (v *Vembed) String() string {
+	if v.version == "" {
+		return "unknown"
+	}
 	return v.version
 }
 
