@@ -32,6 +32,10 @@ func (v *Vembed) GetVersion() string {
 	return v.version
 }
 
+func (v *Vembed) String() string {
+	return v.version
+}
+
 func init() {
 	Version.gitCommit = gitCommit
 	Version.gitBranch = gitBranch
